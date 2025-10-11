@@ -1,1 +1,74 @@
-Coming Soon
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FirstLadyInc – Coming Soon</title>
+  <style>
+    :root {
+      --gold: #d4af37;
+      --black: #000000;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--black);
+      color: var(--gold);
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 8vw, 4rem);
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: clamp(1rem, 4vw, 1.5rem);
+      margin-bottom: 2rem;
+    }
+
+    footer {
+      margin-top: auto;
+      font-size: 0.9rem;
+      color: var(--gold);
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>FirstLadyInc</h1>
+    <p>Coming Soon</p>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> FirstLadyInc. Development by 
+    <a href="https://vouxstudios.com" target="_blank" rel="noopener">Voux Studios</a>
+  </footer>
+
+  <script>
+    // Auto-update the year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
